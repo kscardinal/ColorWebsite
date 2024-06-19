@@ -1,0 +1,125 @@
+:root {
+    --primaryRed: #C32026;
+    --primaryWhite: #FFFFFF;
+    --primaryBlack: #000000;
+
+    --secondaryYellow: #FAA71A;
+    --secondaryRed: #A61419;
+    --secondaryBlue: #373F52;
+
+    --secondaryLightYellow: #FCC15F;
+    --secondaryDarkYellow: #C88615;
+    --secondaryLightRed: #F14960;
+    --secondaryDarkRed: #740E12;
+    --secondaryLightBlue: #737986;
+    --secondaryDarkBlue: #272C39;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: var(--primaryWhite);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#mainTitle {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5rem;
+    color: var(--primaryBlack);
+}
+
+#sampleText {
+    font-family: "inter semibold";
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--primaryBlack);
+}
+
+.colorGroups {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.colorGroups h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--primaryBlack);
+}
+
+.colorGroups div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.colorButton {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Add a style for the active state of color buttons */
+.colorButton.active {
+    background-color: var(--color);
+    color: var(--primaryWhite);
+}
+
+.colorButton.active[style*="--color: #FFFFFF;"] {
+    background-color: var(--color);
+    color: var(--primaryBlack);
+    border: 2px solid var(--primaryBlack);
+    padding: 6px 18.5px; /* Add black border on hover */
+}
+
+.colorButton:hover {
+    background-color: var(--color);
+    color: var(--primaryWhite);
+}
+
+/* Adjust text color for white button on hover */
+.colorButton:hover[style*="--color: #FFFFFF;"] {
+    color: var(--primaryBlack);
+    border: 2px solid var(--primaryBlack);
+    padding: 6px 18.5px; /* Add black border on hover */
+}
+
+/* Add styles for notification */
+.notification {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000;
+    animation: pop-up 2s ease;
+}
+
+@keyframes slide-up {
+    0% { transform: translate(-50%, 100%); }
+    100% { transform: translate(-50%, 0); }
+}
+
+@keyframes pop-up {
+    0% { transform: translate(-50%, 100%); }
+    25% { transform: translate(-50%, 0); opacity: 1; }
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
