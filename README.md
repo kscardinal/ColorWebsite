@@ -28,3 +28,6 @@ A simple web page for previewing and copying branding color hex codes.
 
 You can add or modify colors by editing the button elements in `colorWebsite.html` and updating CSS variables in `colorWebsite.css`.
 
+## License
+
+This project is for internal use at Cardinal Compliance Consultants, LLC.
