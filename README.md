@@ -2,7 +2,7 @@
 `ColorWebsite` is a simple and interactive web tool for previewing and copying branding color hex codes.
 
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub License](https://img.shields.io/github/license/kscardinal/ColorWebsite)
 ![GitHub Release](https://img.shields.io/github/v/release/kscardinal/ColorWebsite)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/kscardinal/ColorWebsite)
 ![GitHub last commit](https://img.shields.io/github/last-commit/kscardinal/ColorWebsite)
